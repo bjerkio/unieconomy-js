@@ -6,7 +6,7 @@ index.ts
 api.ts
 configuration.ts
 custom.d.ts
-tsconfig.json
+# tsconfig.json
 .swagger-codegen/
 .npmrc
 .idea

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "ES5",
+        "strict": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "sourceMap": true,
+        "noLib": false,
+        "declaration": true,
+        "lib": ["dom", "es6", "es5", "dom.iterable", "scripthost"],
+        "typeRoots": ["node_modules/@types/", "types"]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
