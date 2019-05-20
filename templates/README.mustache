@@ -2,9 +2,9 @@
 
 ![](https://raw.githubusercontent.com/Bjerkio/tripletexjs.github.io/master/header.jpg)
 
-## Tripletex 2.0 API API Wrapper (Node.js / Javascript / Typescript)
+## Uni Economy API Wrapper (Node.js / Javascript / Typescript)
 
-A wrapper for Tripletex 2.0 API in Typescript / Javascript. This project is automatically generated using `swagger-codegen`. We run a build step every week and check against Tripletex 2.0 API, if there is a new version, we release a new updated NPM package.
+A wrapper for Uni Economy API in Typescript / Javascript. This project is automatically generated using `swagger-codegen`. We run a build step every week and check against Tripletex 2.0 API, if there is a new version, we release a new updated NPM package.
 
 - Build date: {{generatedDate}}
 
@@ -17,26 +17,7 @@ A wrapper for Tripletex 2.0 API in Typescript / Javascript. This project is auto
 Install it via:
 
 ```shell
-npm install tripletexjs
-```
-
-## Getting Started
-
-Please follow the [installation](#installation) instruction and execute the following TS code:
-
-```typescript
-import { TokensessionApi, InvoiceApi } from 'tripletexjs';
-
-const tokenSession = new TokensessionApi();
-
-tokenSession.create('xxxx-xxxx-xxxx', 'xxxx-xxxx-xxxx', '2018-07-29T11:42:39.439Z').then(token => {
-  const invoice = new InvoiceApi('', token.value.token);
-
-  invoice.get(100000).then(invoiceItem => {
-    console.log(invoiceItem.value.amount);
-  })
-
-})
+npm install unieconomy-js
 ```
 
 ## Contributing
@@ -55,7 +36,7 @@ All URIs are relative to *{{basePath}}*
 ### {{classname}}
 
 ```typescript
-import { {{{classname}}} } from 'tripletexjs';
+import { {{{classname}}} } from 'unieconomy-js';
 ```
 
 Class | Method | HTTP request | Description
@@ -93,7 +74,4 @@ Class | Method | HTTP request | Description
 
 ## Disclaimer
 
-This project is not associated with Tripletex AS at all. The maintainer works with their platform and have
-done so for many years. The Tripletex logo belongs to Tripletex AS. We put it there only so people would
-know we are speaking of the Tripletex accounting software, owned and provided by the Norwegian registered
-company Tripletex AS.
+This project is not associated with Unimicro AS in any way.
