@@ -1,10 +1,10 @@
 {
-  "projectName": "tripletex",
+  "projectName": "unieconomy-js",
   "projectVersion": "2.0.0",
-  "projectDescription": "JavaScript client library for the Tripletex API",
+  "projectDescription": "JavaScript client library for the unieconomy-js API",
   "projectLicenseName": "MIT",
-  "moduleName": "tripletex",
+  "moduleName": "unieconomy-js",
   "usePromises": true,
   "licenseName": "MIT",
-  "npmName": "tripletex"
+  "npmName": "unieconomy-js"
 }
