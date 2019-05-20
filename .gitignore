@@ -1,0 +1,12 @@
+wwwroot/*.js
+node_modules
+typings
+dist
+index.ts
+api.ts
+configuration.ts
+custom.d.ts
+tsconfig.json
+.swagger-codegen/
+.npmrc
+.idea
