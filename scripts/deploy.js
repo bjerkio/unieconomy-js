@@ -4,25 +4,46 @@ const fs = require('fs-extra');
 const path = require('path');
 const shell = require('shelljs');
 const release = require('release-it');
-const request = require('request');
+const got = require('got');
 
 const simpleGit = require('simple-git')(path.resolve(__dirname, '..'));
 
-const swaggerFile = 'https://apidoc.unieconomy.no/api.json';
+const apiBasePath = 'https://test-api.unieconomy.no/api';
 const packagePath = path.resolve(__dirname, '..', 'package.json');
 
 /**
  * Get swagger file from Tripletex
  */
 async function getSwaggerFile() {
-    return new Promise((resolve, reject) => {
-        request(swaggerFile, (err, response, body) => {
-          if (err) {
-            return reject(err);
-          }
-          resolve(JSON.parse(body));
-        });
-    })
+    // Company Key
+    const companyKey = process.env.UNI_COMPANY_KEY;
+
+    // Get Access Token to download Swagger.
+    const token = await got.post(`${apiBasePath}/init/sign-in`, {
+      body: JSON.stringify({
+        UserName: process.env.UNI_USERNAME,
+        PassWord: process.env.UNI_PASSWORD
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+
+    const { access_token } = JSON.parse(token.body);
+
+    // Download Swagger
+    const swagger = await got(`${apiBasePath}/metadataproxy`, {
+      query: {
+        Authorization: `Bearer ${access_token}`,
+        CompanyKey: companyKey
+      },
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+        'Content-Type': 'application/json'
+      }
+    });
+
+    fs.writeFileSync('swagger.json', swagger.body);
 }
 
 async function analyze() {
@@ -55,7 +76,7 @@ function exec(cmd) {
 
 function buildDocker() {
     return exec(
-      `docker run --rm -v \${PWD}:/local swaggerapi/swagger-codegen-cli generate -i ${swaggerFile} -l typescript-node --config /local/config.json --template-dir /local/templates/ -o /local/`
+      `docker run --rm -v \${PWD}:/local swaggerapi/swagger-codegen-cli generate -i /local/swagger.json -l typescript-node --config /local/config.json --template-dir /local/templates/ -o /local/`
     );
 }
 
@@ -98,7 +119,8 @@ async function run() {
         return "No new version. Skipping 🎉"
     }
 
-    await checkoutMaster();
+    // await checkoutMaster();
+    await getSwaggerFile();
     await build();    
     await releasePackage(newVersion);
 }

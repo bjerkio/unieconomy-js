@@ -6,6 +6,8 @@
 
 A wrapper for Uni Economy API in Typescript / Javascript. This project is automatically generated using `swagger-codegen`.
 
+**WARNING: Currently – this is based on Uni Economy Test API.**
+
 ## Installation
 
 ### For [Node.js](https://nodejs.org/)
