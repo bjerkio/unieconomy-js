@@ -1,6 +1,6 @@
 {
   "name": "unieconomy-js",
-  "version": "2019.4.1558375347115",
+  "version": "2019.4.1558448741488",
   "description": "Typescript / Javascript class for Uni Economy API",
   "main": "dist/api.js",
   "typings": "dist/api.d.ts",
