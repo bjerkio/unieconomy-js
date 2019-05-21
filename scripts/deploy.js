@@ -119,7 +119,7 @@ async function run() {
         return "No new version. Skipping 🎉"
     }
 
-    // await checkoutMaster();
+    await checkoutMaster();
     await getSwaggerFile();
     await build();    
     await releasePackage(newVersion);
