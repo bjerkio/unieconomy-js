@@ -42,8 +42,14 @@ async function getSwaggerFile() {
         'Content-Type': 'application/json'
       }
     });
+    
+    const swaggerBody = JSON.parse(swagger.body);
+    
+    // Transform
+    swaggerBody.schemes = ['https'];
+    swaggerBody.host = swaggerBody.host.replace(':443', '');
 
-    fs.writeFileSync('swagger.json', swagger.body);
+    fs.writeFileSync('swagger.json', JSON.stringify(swaggerBody));
 }
 
 async function analyze() {
