@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/Bjerkio/unieconomy-js.svg?branch=master)](https://travis-ci.org/Bjerkio/unieconomy-js) ![Dependencies Check](https://img.shields.io/david/Bjerkio/unieconomy-js.svg) [![Known Vulnerabilities](https://snyk.io/test/github/Bjerkio/unieconomy-js/badge.svg)](https://snyk.io/test/github/Bjerkio/unieconomy-js)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/Bjerkio/unieconomy-js.svg?branch=master)](https://travis-ci.org/Bjerkio/unieconomy-js) ![Dependencies Check](https://img.shields.io/david/Bjerkio/unieconomy-js.svg) [![Known Vulnerabilities](https://snyk.io/test/github/Bjerkio/unieconomy-js/badge.svg)](https://snyk.io/test/github/Bjerkio/unieconomy-js) [![Greenkeeper badge](https://badges.greenkeeper.io/Bjerkio/unieconomy-js.svg)](https://greenkeeper.io/)
 
 ![](https://raw.githubusercontent.com/Bjerkio/unieconomy-js.github.io/master/header.jpg)
 
