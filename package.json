@@ -39,13 +39,13 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.9",
-    "execa": "^1.0.0",
-    "fs-extra": "^7.0.1",
-    "release-it": "^11.0.0",
+    "@types/node": "^12.7.1",
+    "execa": "^2.0.3",
+    "fs-extra": "^8.1.0",
+    "release-it": "^12.3.5",
     "semver": "^6.0.0",
     "shelljs": "^0.8.3",
     "simple-git": "^1.110.0",
-    "typescript": "^2.4.2"
+    "typescript": "^3.5.3"
   }
 }
