@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.13.25",
-    "execa": "^4.0.0",
+    "execa": "^5.0.0",
     "fs-extra": "^9.0.1",
     "release-it": "^14.0.4",
     "semver": "^7.0.0",
