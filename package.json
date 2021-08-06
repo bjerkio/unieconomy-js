@@ -2,35 +2,32 @@
   "name": "unieconomy-js",
   "version": "2019.4.1559044641098",
   "description": "Typescript / Javascript class for Uni Economy API",
-  "main": "dist/api.js",
-  "typings": "dist/api.d.ts",
-  "scripts": {
-    "swagger-gen": "./swagger-gen.sh",
-    "prebuild": "npm run swagger-gen",
-    "compile": "tsc --outDir dist/",
-    "build": "npm run compile",
-    "deploy": "node scripts/deploy"
-  },
-  "files": [
-    "dist/**",
-    "custom.d.ts"
-  ],
   "keywords": [
     "tripletex",
     "accounting",
     "invoice",
     "rest-api"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bjerkio/unieconomy-js.git"
-  },
-  "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
-  "license": "MIT",
+  "homepage": "https://github.com/Bjerkio/unieconomy-js#readme",
   "bugs": {
     "url": "https://github.com/Bjerkio/unieconomy-js/issues"
   },
-  "homepage": "https://github.com/Bjerkio/unieconomy-js#readme",
+  "repository": "github:bjerkio/unieconomy-js",
+  "license": "MIT",
+  "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
+  "main": "dist/api.js",
+  "typings": "dist/api.d.ts",
+  "files": [
+    "dist/**",
+    "custom.d.ts"
+  ],
+  "scripts": {
+    "swagger-gen": "./swagger-gen.sh",
+    "prebuild": "npm run swagger-gen",
+    "build": "npm run compile",
+    "compile": "tsc --outDir dist/",
+    "deploy": "node scripts/deploy"
+  },
   "dependencies": {
     "@types/bluebird": "*",
     "@types/request": "*",
