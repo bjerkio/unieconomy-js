@@ -1,0 +1,47 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: typescript
+    versions:
+    - ">= 4.a, < 5"
+  - dependency-name: "@types/node"
+    versions:
+    - ">= 14.a, < 15"
+  - dependency-name: "@types/node"
+    versions:
+    - 13.13.42
+    - 13.13.44
+    - 13.13.45
+    - 13.13.46
+    - 13.13.47
+    - 13.13.48
+    - 13.13.49
+    - 13.13.50
+    - 15.0.0
+  - dependency-name: simple-git
+    versions:
+    - 2.32.0
+    - 2.35.0
+    - 2.35.1
+    - 2.35.2
+    - 2.36.0
+    - 2.36.1
+    - 2.36.2
+    - 2.37.0
+    - 2.38.0
+  - dependency-name: release-it
+    versions:
+    - 14.3.0
+    - 14.4.0
+    - 14.4.1
+    - 14.5.0
+    - 14.5.1
+  - dependency-name: typescript
+    versions:
+    - 3.9.8
