@@ -36,7 +36,7 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "@types/node": "^13.13.25",
+    "@types/node": "^16.4.10",
     "execa": "^5.0.0",
     "fs-extra": "^9.0.1",
     "release-it": "^14.0.4",
