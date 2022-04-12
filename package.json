@@ -42,7 +42,7 @@
     "release-it": "^14.0.4",
     "semver": "^7.0.0",
     "shelljs": "^0.8.3",
-    "simple-git": "^2.21.0",
+    "simple-git": "^3.5.0",
     "typescript": "^3.5.3"
   }
 }
