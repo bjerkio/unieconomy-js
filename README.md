@@ -23,7 +23,7 @@ npm install unieconomy-js
 ## Contributing
 
 Send bug reports, feature requests, and code contributions to this
-repository. The repository is maintained by Bjerk AS (@cobraz).
+repository. The repository is maintained by Bjerk AS (@simenandre).
 
 Contributions to this library is much appreciated. Please have a look at <thead>
 project tab or issues for more information on current help-needed.
