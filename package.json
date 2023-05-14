@@ -29,8 +29,8 @@
     "deploy": "node scripts/deploy"
   },
   "dependencies": {
-    "@types/bluebird": "*",
-    "@types/request": "*",
+    "@types/bluebird": "^*",
+    "@types/request": "^*",
     "bluebird": "^3.5.0",
     "got": "^11.7.0",
     "request": "^2.81.0"
